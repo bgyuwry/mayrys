@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muros Interactivos Digitales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #5C6BC0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #5C6BC0;
+        }
+        .subtema {
+            background-color: #e3f2fd;
+            border: 2px solid #5C6BC0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .subtema:hover {
+            background-color: #bbdefb;
+        }
+        .contenido {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5C6BC0;
+            color: white;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100px;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function toggleContenido(id) {
+            var contenido = document.getElementById(id);
+            if (contenido.style.display === "none") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    Los Muros Interactivos Digitales
+</header>
+
+<section>
+    <h2>Definición</h2>
+    <p>Un muro interactivo digital es una herramienta que utiliza múltiples recursos (texto, fotos, videos, gráficos) para comunicar información organizada según las necesidades del público. Esta herramienta es clave en entornos educativos y colaborativos por su capacidad de integrar contenidos dinámicos y permitir la participación de los usuarios.</p>
+
+    <div class="subtema" onclick="toggleContenido('caracteristicas')">
+        <h3>Características</h3>
+    </div>
+    <div id="caracteristicas" class="contenido">
+        <ul>
+            <li><strong>Sustentabilidad:</strong> Permiten la reutilización y actualización continua.</li>
+            <li><strong>Atractivo visual:</strong> Los elementos visuales captan la atención del público.</li>
+            <li><strong>Actualización en tiempo real:</strong> Permite agregar y modificar contenido de forma inmediata.</li>
+            <li><strong>Interactividad:</strong> Los usuarios pueden interactuar con los elementos del muro.</li>
+            <li><strong>Variedad de contenido:</strong> Permite integrar texto, videos, imágenes, gráficos, y más.</li>
+            <li><strong>Gestión simple y práctica:</strong> Fácil de usar y mantener por parte de los creadores.</li>
+        </ul>
+    </div>
+
+    <div class="subtema" onclick="toggleContenido('fases')">
+        <h3>Fases para la elaboración</h3>
+    </div>
+    <div id="fases" class="contenido">
+        <ol>
+            <li><strong>Diseño y planificación del mural:</strong> Los grupos de trabajo deben planificar la distribución coherente y jerárquica de la información.</li>
+            <li><strong>Selección de la temática:</strong> Definir los contenidos concretos dentro de la temática a desarrollar.</li>
+            <li><strong>Documentación y recopilación de contenido:</strong> Recolectar información confiable y relevante para la audiencia.</li>
+            <li><strong>Exploración de herramientas digitales:</strong> Aprender a utilizar herramientas digitales para crear el muro.</li>
+            <li><strong>Organización del trabajo:</strong> Los grupos pequeños deben trabajar de forma colaborativa.</li>
+            <li><strong>Publicación del mural:</strong> Se expone el producto final al público objetivo.</li>
+        </ol>
+    </div>
+
+    <div class="subtema" onclick="toggleContenido('herramientas')">
+        <h3>Herramientas recomendadas</h3>
+    </div>
+    <div id="herramientas" class="contenido">
+        <ul>
+            <li>
+                <strong>Jamboard:</strong> Pizarra virtual de Google para colaboración en tiempo real.
+                <br><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Jamboard_logo.png" alt="Jamboard">
+            </li>
+            <li>
+                <strong>Padlet:</strong> Herramienta intuitiva y multilingüe, ideal para proyectos colaborativos.
+                <br><img src="https://padlet.com/favicon.ico" alt="Padlet">
+            </li>
+            <li>
+                <strong>Lino it:</strong> Excelente para integrar multimedia en murales interactivos.
+                <br><img src="https://linoit.com/favicon.ico" alt="Lino it">
+            </li>
+            <li>
+                <strong>Mural.ly:</strong> Facilita la creación de murales visuales y la colaboración entre equipos.
+                <br><img src="https://mural.co/images/favicon.png" alt="Mural.ly">
+            </li>
+        </ul>
+    </div>
+
+    <div class="subtema" onclick="toggleContenido('ventajas')">
+        <h3>Ventajas y Desventajas</h3>
+    </div>
+    <div id="ventajas" class="contenido">
+        <h4>Ventajas</h4>
+        <ul>
+            <li>Facilitan la integración de contenido multimedia y recursos interactivos.</li>
+            <li>Favorecen el aprendizaje colaborativo y participativo.</li>
+            <li>Son accesibles desde diferentes dispositivos.</li>
+            <li>Permiten una actualización continua del contenido.</li>
+        </ul>
+
+        <h4>Desventajas</h4>
+        <ul>
+            <li>Pueden requerir acceso constante a internet.</li>
+            <li>La interacción depende de las habilidades digitales de los usuarios.</li>
+            <li>Exigen una planificación adecuada para evitar la sobrecarga de información.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    Creado por Reyes
+</footer>
+
+</body>
+</html>
